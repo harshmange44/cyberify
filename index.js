@@ -3,6 +3,9 @@ const app = express();
 const dotenv = require("dotenv");
 const breachRoute = require("./routes/breach");
 const bodyParser = require("body-parser");
+const cors = require('cors');
+
+app.use(cors())
 
 dotenv.config();
 //app.use(express.json());
